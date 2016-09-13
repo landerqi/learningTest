@@ -39,6 +39,7 @@ urllib2.install_opener(opener)
 #使用带有cookie 的urllib2 访问网页
 response3 = urllib2.urlopen(URL)
 
+print cj
 print response3.read()
 
 ##
