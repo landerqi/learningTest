@@ -1,0 +1,26 @@
+.Header {
+    @extend %Sec;
+    .u-container {
+        padding-top: 273px;
+    }
+
+    z-index: 100;
+}
+
+.Header-btn {
+    width: 176px;
+    height: 42px;
+    display: block;
+    background-image: url(../slice/rank/header-btn.png);
+    margin: auto;
+    position: relative;
+    left: -6px;
+
+    &:hover {
+        background-image: url(../slice/rank/header-btn-hover.png);
+    }
+
+    &:active {
+        background-image: url(../slice/rank/header-btn-down.png);
+    }
+}

@@ -1,0 +1,19 @@
+.Footer {
+
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background-color: #1c1b16;
+    color: #6b604e;
+
+    a {
+        color: #6b604e;
+        &:hover {
+            color: #6b604e;
+        }
+    }
+
+    .u-sectionContainer {
+        padding-top: 15px;
+    }
+}

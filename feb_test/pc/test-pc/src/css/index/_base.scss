@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+html, body {
+    font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2a24;
+    color: #938354;
+    font-size: 12px;
+    b{
+        color: #f9dd7b;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #938354;
+    &:hover {
+        color: #938354;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+body #nav_top_bar{
+    position: fixed;
+    width: 100%;
+    z-index: 11000;
+}

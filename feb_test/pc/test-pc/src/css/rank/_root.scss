@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+.u-root {
+    height: 2774px;
+    background: url(../img/rank/bg.jpg) no-repeat center 0;
+    overflow: hidden;
+}
+
+
+.Sec-item {
+    @extend %clearfix;
+    margin-bottom: 31px;
+    overflow: hidden;
+}
+
+.Sec-itemPlace {
+    float: left;
+    width: 55px;
+    height: 30px;
+    margin-top: 16px;
+
+    &--1 {
+        background-image: url(../slice/rank/sec2-place1.png);
+    }
+    &--2 {
+        background-image: url(../slice/rank/sec2-place2.png);
+    }
+    &--3 {
+        background-image: url(../slice/rank/sec2-place3.png);
+    }
+}
+
+.Sec-itemIcon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #341260;
+    margin-top: 16px;
+    border-radius: 5px;
+    position: relative;
+    img {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+}
+
+.Sec-itemAvatar {
+    float: left;
+    position: relative;
+    width: 62px;
+    height: 63px;
+    background-image: url(../slice/rank/sec2-avatar-bg.png);
+    margin-left: 20px;
+}
+
+.Sec-itemPic {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    border-radius: 100%;
+}
+
+.Sec-itemInfo {
+    float: left;
+    width: 196px;
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+.Sec-itemName {
+    width: 100%;
+    font-size: 14px;
+    color: #af95ff;
+    line-height: 1.5;
+    @include text-overflow;
+    margin-bottom: 10px;
+}
+
+.Sec-itemGet,
+.Sec-itemSend {
+    width: 100%;
+    font-size: 14px;
+    color: #7143af;
+    line-height: 1.5;
+    @include text-overflow;
+}
+
+.Sec-itemGet span {
+    color: #f641eb;
+}
+
+.Sec-itemSend span {
+    color: #60abff;
+}
+
+
+.Sec-itemBtn {
+    float: left;
+    display: block;
+    width: 77px;
+    height: 32px;
+    background-image: url(../slice/rank/btn-sub.png);
+    margin-left: 18px;
+    margin-top: 15px;
+
+    &:hover {
+        background-image: url(../slice/rank/btn-sub-hover.png);
+    }
+
+    &:active {
+        background-image: url(../slice/rank/btn-sub-down.png);
+    }
+
+    &.is-ed {
+        cursor: default;
+        background-image: url(../slice/rank/btn-sub-ed.png);
+    }
+    &.is-ing {
+        background-image: url(../slice/rank/btn-sub-ing.png);
+    }
+
+}
+
+.Sec-tips {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    color: #333;
+    font-size: 14px;
+    padding: 8px;
+    line-height: 1.5;
+    border-radius: 5px;
+    background-color: #fff;
+}

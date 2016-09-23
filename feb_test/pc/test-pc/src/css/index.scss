@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import "lib/mixin";
+@import "lib/normalize";
+@import "lib/reset";
+@import "lib/util";
+@import "lib/hack";
+
+
+html {overflow-y:auto;overflow-x:hidden;}
+
+
+//@import "components/index/test";
+@import "index/base";
+@import "index/header";
+@import "index/main";
+@import "index/sec1";
+@import "index/sec2";
+@import "index/sec3";
+@import "index/sec4";
+@import "index/foot";

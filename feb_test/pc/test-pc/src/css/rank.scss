@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import "lib/mixin";
+@import "lib/normalize";
+@import "lib/reset";
+@import "lib/util";
+@import "lib/hack";
+
+
+html {overflow-y:auto;overflow-x:hidden;}
+
+//@import "components/rank/test";
+
+@import "common/_modal";
+@import "rank/base";
+@import "rank/root";
+@import "rank/header";
+@import "rank/sec1";
+@import "rank/sec2";
+@import "rank/sec3";
+@import "rank/sec4";
+@import "rank/foot";
+@import "rank/modal";

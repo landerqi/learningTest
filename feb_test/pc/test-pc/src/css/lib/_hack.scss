@@ -1,0 +1,5 @@
+/* hack for ie */
+a, a:focus, *:focus, area {
+    noFocusLine: expression(this.onFocus=this.blur());
+    outline: 0;
+}

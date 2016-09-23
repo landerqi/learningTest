@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.Modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.Modal-mask {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    @include transparent(#000, 0.5);
+}
+
+.Modal-header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 24px;
+    background-color: #6321b0;
+    text-indent: 22px;
+}
+
+.Modal-btn {
+    @extend %ir;
+
+    &--close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 31px;
+        height: 31px;
+        background-repeat: no-repeat;
+        background-image: url(../slice/common/btn-close.png);
+
+        &:hover {
+            background-image: url(../slice/common/btn-close-hover.png);
+        }
+        &:active {
+            background-image: url(../slice/common/btn-close-down.png);
+        }
+    }
+}
