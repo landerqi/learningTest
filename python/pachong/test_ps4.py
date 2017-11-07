@@ -19,20 +19,20 @@ and they lived at the bottom of a well.</p>
 
 soup = BeautifulSoup( html_doc, 'html.parser', from_encoding='utf-8')
 
-print '获取所有的连接'
+print ('获取所有的连接')
 links = soup.find_all('a')
 for link in links:
-    print link.name, link['href'], link.get_text()
+    print (link.name, link['href'], link.get_text())
 
-print '获取lacie的连接'
+print ('获取lacie的连接')
 link_node = soup.find('a', href='http://example.com/lacie')
-print link_node.name, link_node['href'], link_node.get_text()
+print (link_node.name, link_node['href'], link_node.get_text())
 
-print '正则匹配'
+print ('正则匹配')
 link_node = soup.find('a', href=re.compile(r'ill'))
-print link_node.name, link_node['href'], link_node.get_text()
+print (link_node.name, link_node['href'], link_node.get_text())
 
-print '获取Ｐ段落文字'
+print ('获取Ｐ段落文字')
 p_node = soup.find('p', class_="title")
-print p_node.name, p_node.get_text()
+print (p_node.name, p_node.get_text())
 
