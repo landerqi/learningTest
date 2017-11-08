@@ -6,3 +6,5 @@ if age < 21:
 else:
     print('你能買酒。')
 print('這句話處於if語句塊的外面。')
+print(dir())
+print(__name__)
