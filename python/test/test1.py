@@ -17,7 +17,7 @@ print (S + 'abd')
 print (S * 8)
 
 S = 'z' + S[1:]
-S = S * 8;
+S = S * 8
 print (S)
 print (S.find('y'))
 print (S.replace('y', 'X'))
