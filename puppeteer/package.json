@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "feb d",
+    "build": "feb o"
+  },
+  "dependencies": {
+    "puppeteer": "^1.10.0"
+  }
+}
